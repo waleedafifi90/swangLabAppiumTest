@@ -2,6 +2,7 @@ package com.swanglabs.app.tests;
 
 import com.swanglabs.app.core.ConfigLoader;
 import com.swanglabs.app.core.DriverManager;
+import com.swanglabs.app.utils.MobileActions;
 
 import io.appium.java_client.AppiumDriver;
 import org.openqa.selenium.OutputType;
@@ -21,6 +22,8 @@ public abstract class BaseTest {
 
     protected AppiumDriver driver;
     protected WebDriverWait wait;
+    protected MobileActions actions;
+
 
     private static final Path ARTIFACTS_DIR = Path.of("target", "artifacts");
     private int implicitSeconds = 10;
@@ -41,6 +44,9 @@ public abstract class BaseTest {
 
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(implicitSeconds));
         wait = new WebDriverWait(driver, Duration.ofSeconds(explicitSeconds));
+        
+        String appPackage = cfg.getOptional("android.appPackage");
+        actions = new MobileActions(driver, wait, appPackage);
     }
 
     @AfterMethod(alwaysRun = true)
