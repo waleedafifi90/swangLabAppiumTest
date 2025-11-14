@@ -9,6 +9,7 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.ITestResult;
+import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
@@ -49,17 +50,18 @@ public abstract class BaseTest {
         actions = new MobileActions(driver, wait, appPackage);
     }
 
-    @AfterMethod(alwaysRun = true)
-    public void tearDown(ITestResult result) {
-        try {
-            if (!result.isSuccess()) {
-                saveFailureScreenshot(result);
-            }
-        } catch (Exception e) {
-            System.err.println("Failed saving artifacts: " + e.getMessage());
-        } finally {
+    @AfterClass(alwaysRun = true)
+    public void tearDown() {
+//    	ITestResult result
+    	//        try {
+//            if (!result.isSuccess()) {
+//                saveFailureScreenshot(result);
+//            }
+//        } catch (Exception e) {
+//            System.err.println("Failed saving artifacts: " + e.getMessage());
+//        } finally {
             DriverManager.quitDriver();
-        }
+//        }
     }
 
     private void saveFailureScreenshot(ITestResult result) throws Exception {
