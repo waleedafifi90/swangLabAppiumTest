@@ -5,7 +5,7 @@
     <classes>
       <class name="com.swanglabs.app.tests.LoginTest">
         <methods>
-          <include name="validLogin_works"/>
+          <include name="problemUserTest"/>
           <include name="tearDown"/>
           <include name="setUp"/>
         </methods>
