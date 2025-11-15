@@ -5,6 +5,7 @@
     <classes>
       <class name="com.swanglabs.app.tests.Sorting">
         <methods>
+          <include name="problemUserTest"/>
           <include name="tearDown"/>
           <include name="testProductSortingAndDetails"/>
           <include name="setUp"/>
