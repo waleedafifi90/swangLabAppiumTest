@@ -2,31 +2,31 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-11-13T18:00:48 EET" name="Default suite" finished-at="2025-11-13T18:01:06 EET" duration-ms="17200">
+  <suite started-at="٢٠٢٥-١١-١٥T١٣:٢٢:٤٥ IST" name="Default suite" finished-at="٢٠٢٥-١١-١٥T١٣:٢٣:١٣ IST" duration-ms="27791">
     <groups>
     </groups>
-    <test started-at="2025-11-13T18:00:48 EET" name="Default test" finished-at="2025-11-13T18:01:06 EET" duration-ms="17200">
-      <class name="com.swanglabs.app.tests.LoginTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.swanglabs.app.tests.LoginTest@6ae5aa72]" started-at="2025-11-13T18:00:48 EET" name="setUp" finished-at="2025-11-13T18:00:55 EET" duration-ms="7104" status="PASS">
+    <test started-at="٢٠٢٥-١١-١٥T١٣:٢٢:٤٥ IST" name="Default test" finished-at="٢٠٢٥-١١-١٥T١٣:٢٣:١٣ IST" duration-ms="27791">
+      <class name="com.swanglabs.app.tests.Sorting">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.swanglabs.app.tests.Sorting@9d5509a]" started-at="٢٠٢٥-١١-١٥T١٣:٢٢:٤٥ IST" name="setUp" finished-at="٢٠٢٥-١١-١٥T١٣:٢٢:٤٩ IST" duration-ms="4068" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="validLogin_works()[pri:0, instance:com.swanglabs.app.tests.LoginTest@6ae5aa72]" started-at="2025-11-13T18:00:55 EET" name="validLogin_works" finished-at="2025-11-13T18:01:05 EET" duration-ms="9588" status="PASS">
+        <test-method signature="testProductSortingAndDetails()[pri:0, instance:com.swanglabs.app.tests.Sorting@9d5509a]" started-at="٢٠٢٥-١١-١٥T١٣:٢٢:٤٩ IST" name="testProductSortingAndDetails" finished-at="٢٠٢٥-١١-١٥T١٣:٢٣:١٣ IST" duration-ms="23688" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validLogin_works -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.swanglabs.app.tests.LoginTest@6ae5aa72]" started-at="2025-11-13T18:01:05 EET" name="tearDown" finished-at="2025-11-13T18:01:06 EET" duration-ms="481" status="PASS">
+        </test-method> <!-- testProductSortingAndDetails -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.swanglabs.app.tests.Sorting@9d5509a]" started-at="٢٠٢٥-١١-١٥T١٣:٢٣:١٣ IST" name="tearDown" finished-at="٢٠٢٥-١١-١٥T١٣:٢٣:١٣ IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=validLogin_works status=SUCCESS method=LoginTest.validLogin_works()[pri:0, instance:com.swanglabs.app.tests.LoginTest@6ae5aa72] output={null}]]]>
+                <![CDATA[[TestResult name=testProductSortingAndDetails status=SUCCESS method=Sorting.testProductSortingAndDetails()[pri:0, instance:com.swanglabs.app.tests.Sorting@9d5509a] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.swanglabs.app.tests.LoginTest -->
+      </class> <!-- com.swanglabs.app.tests.Sorting -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

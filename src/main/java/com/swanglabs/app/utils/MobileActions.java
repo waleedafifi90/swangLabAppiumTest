@@ -122,14 +122,31 @@ public class MobileActions {
 	}
 
 	public String safeGetTextOrAttr(WebElement el) {
-		try {
-			String t = el.getText();
-			if (t != null && !t.isBlank())
-				return t;
-			return el.getAttribute("text");
-		} catch (Exception e) {
-			return null;
-		}
+	    try {
+	        String t = el.getText();
+	        if (t != null && !t.isBlank()) {
+	            return t.trim();
+	        }
+
+	        t = el.getAttribute("text");
+	        if (t != null && !t.isBlank()) {
+	            return t.trim();
+	        }
+
+	        t = el.getAttribute("content-desc");
+	        if (t != null && !t.isBlank()) {
+	            return t.trim();
+	        }
+
+	        t = el.getAttribute("contentDescription");
+	        if (t != null && !t.isBlank()) {
+	            return t.trim();
+	        }
+
+	        return "";
+	    } catch (Exception e) {
+	        return "";
+	    }
 	}
 
 	public void maybeHideKeyboard() {
