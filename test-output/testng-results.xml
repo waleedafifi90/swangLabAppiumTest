@@ -62,7 +62,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.swanglabs.app.tests.LoginTest -->
+      </class> <!-- com.swanglabs.app.tests.Sorting -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
