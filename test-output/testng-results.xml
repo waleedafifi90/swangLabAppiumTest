@@ -1,17 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="6" total="7" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="7" passed="6" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-11-15T00:04:05 EET" name="Default suite" finished-at="2025-11-15T00:04:36 EET" duration-ms="31038">
+  <suite started-at="2025-11-17T18:30:33 EET" name="Default suite" finished-at="2025-11-17T18:32:09 EET" duration-ms="96191">
     <groups>
     </groups>
-    <test started-at="2025-11-15T00:04:05 EET" name="Default test" finished-at="2025-11-15T00:04:36 EET" duration-ms="31038">
+    <test started-at="2025-11-17T18:30:33 EET" name="Default test" finished-at="2025-11-17T18:32:09 EET" duration-ms="96191">
       <class name="com.swanglabs.app.tests.LoginTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.swanglabs.app.tests.LoginTest@38c6f217]" started-at="2025-11-15T00:04:05 EET" name="setUp" finished-at="2025-11-15T00:04:15 EET" duration-ms="9235" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.swanglabs.app.tests.LoginTest@16293aa2]" started-at="2025-11-17T18:30:33 EET" name="setUp" finished-at="2025-11-17T18:30:40 EET" duration-ms="6823" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="problemUserTest()[pri:7, instance:com.swanglabs.app.tests.LoginTest@38c6f217]" started-at="2025-11-15T00:04:15 EET" name="problemUserTest" finished-at="2025-11-15T00:04:36 EET" duration-ms="21124" status="FAIL">
+        <test-method signature="validLoginWorks()[pri:0, instance:com.swanglabs.app.tests.LoginTest@16293aa2]" started-at="2025-11-17T18:30:40 EET" name="validLoginWorks" finished-at="2025-11-17T18:30:50 EET" duration-ms="9591" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validLoginWorks -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.swanglabs.app.tests.LoginTest@16293aa2]" started-at="2025-11-17T18:30:50 EET" name="setUp" finished-at="2025-11-17T18:30:50 EET" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="drawerOpensAndHasExpectedItems()[pri:1, instance:com.swanglabs.app.tests.LoginTest@16293aa2]" started-at="2025-11-17T18:30:50 EET" name="drawerOpensAndHasExpectedItems" finished-at="2025-11-17T18:31:12 EET" duration-ms="22347" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- drawerOpensAndHasExpectedItems -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.swanglabs.app.tests.LoginTest@16293aa2]" started-at="2025-11-17T18:31:12 EET" name="setUp" finished-at="2025-11-17T18:31:12 EET" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="drawer_close_button_closes_drawer()[pri:2, instance:com.swanglabs.app.tests.LoginTest@16293aa2]" started-at="2025-11-17T18:31:12 EET" name="drawer_close_button_closes_drawer" finished-at="2025-11-17T18:31:34 EET" duration-ms="22222" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- drawer_close_button_closes_drawer -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.swanglabs.app.tests.LoginTest@16293aa2]" started-at="2025-11-17T18:31:34 EET" name="setUp" finished-at="2025-11-17T18:31:34 EET" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="product_title_and_price_match_between_list_and_details()[pri:3, instance:com.swanglabs.app.tests.LoginTest@16293aa2]" started-at="2025-11-17T18:31:34 EET" name="product_title_and_price_match_between_list_and_details" finished-at="2025-11-17T18:31:43 EET" duration-ms="8574" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- product_title_and_price_match_between_list_and_details -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.swanglabs.app.tests.LoginTest@16293aa2]" started-at="2025-11-17T18:31:43 EET" name="setUp" finished-at="2025-11-17T18:31:43 EET" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testLogOut()[pri:5, instance:com.swanglabs.app.tests.LoginTest@16293aa2]" started-at="2025-11-17T18:31:43 EET" name="testLogOut" finished-at="2025-11-17T18:31:46 EET" duration-ms="3561" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogOut -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.swanglabs.app.tests.LoginTest@16293aa2]" started-at="2025-11-17T18:31:46 EET" name="setUp" finished-at="2025-11-17T18:31:46 EET" duration-ms="18" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="lockedOutUserShowsError()[pri:6, instance:com.swanglabs.app.tests.LoginTest@16293aa2]" started-at="2025-11-17T18:31:46 EET" name="lockedOutUserShowsError" finished-at="2025-11-17T18:31:52 EET" duration-ms="5825" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- lockedOutUserShowsError -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.swanglabs.app.tests.LoginTest@16293aa2]" started-at="2025-11-17T18:31:52 EET" name="setUp" finished-at="2025-11-17T18:31:52 EET" duration-ms="9" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="problemUserTest()[pri:7, instance:com.swanglabs.app.tests.LoginTest@16293aa2]" started-at="2025-11-17T18:31:52 EET" name="problemUserTest" finished-at="2025-11-17T18:32:08 EET" duration-ms="16242" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[Expected exact text 'Sauce Labs Backpack' but was 'Sauce Labs Bike Light' expected [Sauce Labs Bike Light] but found [Sauce Labs Backpack]]]>
@@ -23,7 +71,7 @@ at org.testng.Assert.failNotEquals(Assert.java:1590)
 at org.testng.Assert.assertEqualsImpl(Assert.java:150)
 at org.testng.Assert.assertEquals(Assert.java:132)
 at org.testng.Assert.assertEquals(Assert.java:656)
-at com.swanglabs.app.tests.LoginTest.problemUserTest(LoginTest.java:198)
+at com.swanglabs.app.tests.LoginTest.problemUserTest(LoginTest.java:199)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -58,11 +106,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- problemUserTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.swanglabs.app.tests.LoginTest@38c6f217]" started-at="2025-11-15T00:04:36 EET" name="tearDown" finished-at="2025-11-15T00:04:36 EET" duration-ms="653" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.swanglabs.app.tests.LoginTest@16293aa2]" started-at="2025-11-17T18:32:08 EET" name="tearDown" finished-at="2025-11-17T18:32:09 EET" duration-ms="902" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.swanglabs.app.tests.Sorting -->
+      </class> <!-- com.swanglabs.app.tests.LoginTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

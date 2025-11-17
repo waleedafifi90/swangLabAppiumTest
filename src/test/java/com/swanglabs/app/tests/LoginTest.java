@@ -12,8 +12,8 @@ import org.testng.annotations.Test;
 
 public class LoginTest extends BaseTest {
 
-	private static final String USERNAME = "standard_user";
-	private static final String PASSWORD = "secret_sauce";
+    private static final String USERNAME = "test-Username";
+    private static final String PASSWORD = "test-Password";
 	private static final String LOGIN = "test-LOGIN";
 	private static final String STANDARD_USER_TEXT = "standard_user";
 	private static final String TESTMENU = "test-Menu";
@@ -157,6 +157,7 @@ public class LoginTest extends BaseTest {
 	
 	@Test(priority = 7)
 	public void problemUserTest() throws InterruptedException {
+		actions.scrollIntoViewByDesc(USERNAME);
 		wait.until(ExpectedConditions.presenceOfElementLocated(usernameField));
 		
 		actions.scrollIntoViewByText(PROBLEM_USER);

@@ -27,8 +27,8 @@ public abstract class BaseTest {
 
 
     private static final Path ARTIFACTS_DIR = Path.of("target", "artifacts");
-    private int implicitSeconds = 10;
-    private int explicitSeconds = 20;
+    private int implicitSeconds = 5;
+    private int explicitSeconds = 5;
 
     @BeforeMethod(alwaysRun = true)
     public void setUp() throws Exception {
@@ -52,35 +52,6 @@ public abstract class BaseTest {
 
     @AfterClass(alwaysRun = true)
     public void tearDown() {
-//    	ITestResult result
-    	//        try {
-//            if (!result.isSuccess()) {
-//                saveFailureScreenshot(result);
-//            }
-//        } catch (Exception e) {
-//            System.err.println("Failed saving artifacts: " + e.getMessage());
-//        } finally {
             DriverManager.quitDriver();
-//        }
-    }
-
-    private void saveFailureScreenshot(ITestResult result) throws Exception {
-        if (!(driver instanceof TakesScreenshot)) return;
-        byte[] png = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
-
-        String fileName = sanitize(result.getMethod().getMethodName())
-                + "_" + timestamp() + ".png";
-        Path out = ARTIFACTS_DIR.resolve(fileName);
-        Files.write(out, png);
-        System.out.println("Saved screenshot: " + out.toAbsolutePath());
-    }
-
-    private static String timestamp() {
-        return LocalDateTime.now().format(DateTimeFormatter.ofPattern("yyyyMMdd_HHmmss"));
-    }
-
-    private static String sanitize(String s) {
-        return s == null ? "screenshot"
-                : s.replaceAll("[^a-zA-Z0-9._-]", "_");
     }
 }

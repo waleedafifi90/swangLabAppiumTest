@@ -88,7 +88,6 @@ public class Sorting extends BaseTest {
         
         WebElement detailNameEl = actions.scrollIntoViewByText(expectedName); 
         String actualName = actions.safeGetTextOrAttr(detailNameEl);
-        WebElement detailPriceContainer = actions.scrollIntoViewByDesc("test-Price");
         WebElement detailPriceEl = driver.findElement(By.xpath("//android.widget.TextView[@content-desc='test-Price']"));
         String actualPrice = detailPriceEl.getText().trim();
         System.out.println("DETAIL name : " + actualName);

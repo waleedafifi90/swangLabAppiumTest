@@ -3,14 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.swanglabs.app.tests.Sorting">
+      <class name="com.swanglabs.app.tests.LoginTest">
         <methods>
           <include name="problemUserTest"/>
           <include name="tearDown"/>
-          <include name="testProductSortingAndDetails"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- com.swanglabs.app.tests.Sorting -->
+      </class> <!-- com.swanglabs.app.tests.LoginTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
