@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="MobileSuite" verbose="1" preserve-order="true">
+  <test name="Appium Android Tests" preserve-order="true">
+    <classes>
+      <class name="com.swanglabs.app.tests.LoginTest"/>
+      <class name="com.swanglabs.app.tests.Sorting"/>
+    </classes>
+  </test>
+
+</suite>

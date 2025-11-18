@@ -1,77 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="7" passed="6" failed="1" skipped="0">
+<testng-results ignored="0" total="12" passed="11" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-11-17T18:30:33 EET" name="Default suite" finished-at="2025-11-17T18:32:09 EET" duration-ms="96191">
+  <suite started-at="2025-11-17T22:59:54 EET" name="Default suite" finished-at="2025-11-17T23:01:17 EET" duration-ms="82938">
     <groups>
     </groups>
-    <test started-at="2025-11-17T18:30:33 EET" name="Default test" finished-at="2025-11-17T18:32:09 EET" duration-ms="96191">
-      <class name="com.swanglabs.app.tests.LoginTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.swanglabs.app.tests.LoginTest@16293aa2]" started-at="2025-11-17T18:30:33 EET" name="setUp" finished-at="2025-11-17T18:30:40 EET" duration-ms="6823" status="PASS">
+    <test started-at="2025-11-17T22:59:54 EET" name="Default test" finished-at="2025-11-17T23:01:17 EET" duration-ms="82938">
+      <class name="com.swanglabs.app.tests.CheckoutWorkflow">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.swanglabs.app.tests.CheckoutWorkflow@5ffead27]" started-at="2025-11-17T22:59:54 EET" name="setUp" finished-at="2025-11-17T23:00:05 EET" duration-ms="10394" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="validLoginWorks()[pri:0, instance:com.swanglabs.app.tests.LoginTest@16293aa2]" started-at="2025-11-17T18:30:40 EET" name="validLoginWorks" finished-at="2025-11-17T18:30:50 EET" duration-ms="9591" status="PASS">
+        <test-method signature="testInvalidLogin()[pri:1, instance:com.swanglabs.app.tests.CheckoutWorkflow@5ffead27]" started-at="2025-11-17T23:00:05 EET" name="testInvalidLogin" finished-at="2025-11-17T23:00:12 EET" duration-ms="7074" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validLoginWorks -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.swanglabs.app.tests.LoginTest@16293aa2]" started-at="2025-11-17T18:30:50 EET" name="setUp" finished-at="2025-11-17T18:30:50 EET" duration-ms="3" status="PASS">
+        </test-method> <!-- testInvalidLogin -->
+        <test-method signature="testValidLogin()[pri:2, instance:com.swanglabs.app.tests.CheckoutWorkflow@5ffead27]" started-at="2025-11-17T23:00:12 EET" name="testValidLogin" finished-at="2025-11-17T23:00:18 EET" duration-ms="6393" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="drawerOpensAndHasExpectedItems()[pri:1, instance:com.swanglabs.app.tests.LoginTest@16293aa2]" started-at="2025-11-17T18:30:50 EET" name="drawerOpensAndHasExpectedItems" finished-at="2025-11-17T18:31:12 EET" duration-ms="22347" status="PASS">
+        </test-method> <!-- testValidLogin -->
+        <test-method signature="testAddOneItemToCart()[pri:3, instance:com.swanglabs.app.tests.CheckoutWorkflow@5ffead27]" started-at="2025-11-17T23:00:18 EET" name="testAddOneItemToCart" finished-at="2025-11-17T23:00:23 EET" duration-ms="4724" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- drawerOpensAndHasExpectedItems -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.swanglabs.app.tests.LoginTest@16293aa2]" started-at="2025-11-17T18:31:12 EET" name="setUp" finished-at="2025-11-17T18:31:12 EET" duration-ms="3" status="PASS">
+        </test-method> <!-- testAddOneItemToCart -->
+        <test-method signature="addMultipleItemsToCart()[pri:4, instance:com.swanglabs.app.tests.CheckoutWorkflow@5ffead27]" started-at="2025-11-17T23:00:23 EET" name="addMultipleItemsToCart" finished-at="2025-11-17T23:00:27 EET" duration-ms="4191" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="drawer_close_button_closes_drawer()[pri:2, instance:com.swanglabs.app.tests.LoginTest@16293aa2]" started-at="2025-11-17T18:31:12 EET" name="drawer_close_button_closes_drawer" finished-at="2025-11-17T18:31:34 EET" duration-ms="22222" status="PASS">
+        </test-method> <!-- addMultipleItemsToCart -->
+        <test-method signature="removeItemFromCart()[pri:5, instance:com.swanglabs.app.tests.CheckoutWorkflow@5ffead27]" started-at="2025-11-17T23:00:27 EET" name="removeItemFromCart" finished-at="2025-11-17T23:00:30 EET" duration-ms="2783" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- drawer_close_button_closes_drawer -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.swanglabs.app.tests.LoginTest@16293aa2]" started-at="2025-11-17T18:31:34 EET" name="setUp" finished-at="2025-11-17T18:31:34 EET" duration-ms="3" status="PASS">
+        </test-method> <!-- removeItemFromCart -->
+        <test-method signature="checkoutInfoEmpty()[pri:6, instance:com.swanglabs.app.tests.CheckoutWorkflow@5ffead27]" started-at="2025-11-17T23:00:30 EET" name="checkoutInfoEmpty" finished-at="2025-11-17T23:00:33 EET" duration-ms="2819" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="product_title_and_price_match_between_list_and_details()[pri:3, instance:com.swanglabs.app.tests.LoginTest@16293aa2]" started-at="2025-11-17T18:31:34 EET" name="product_title_and_price_match_between_list_and_details" finished-at="2025-11-17T18:31:43 EET" duration-ms="8574" status="PASS">
+        </test-method> <!-- checkoutInfoEmpty -->
+        <test-method signature="checkoutMissLastname()[pri:7, instance:com.swanglabs.app.tests.CheckoutWorkflow@5ffead27]" started-at="2025-11-17T23:00:33 EET" name="checkoutMissLastname" finished-at="2025-11-17T23:00:42 EET" duration-ms="9367" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- product_title_and_price_match_between_list_and_details -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.swanglabs.app.tests.LoginTest@16293aa2]" started-at="2025-11-17T18:31:43 EET" name="setUp" finished-at="2025-11-17T18:31:43 EET" duration-ms="7" status="PASS">
+        </test-method> <!-- checkoutMissLastname -->
+        <test-method signature="checkoutMissZipcode()[pri:8, instance:com.swanglabs.app.tests.CheckoutWorkflow@5ffead27]" started-at="2025-11-17T23:00:42 EET" name="checkoutMissZipcode" finished-at="2025-11-17T23:00:52 EET" duration-ms="9589" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="testLogOut()[pri:5, instance:com.swanglabs.app.tests.LoginTest@16293aa2]" started-at="2025-11-17T18:31:43 EET" name="testLogOut" finished-at="2025-11-17T18:31:46 EET" duration-ms="3561" status="PASS">
+        </test-method> <!-- checkoutMissZipcode -->
+        <test-method signature="checkoutSuccess()[pri:9, instance:com.swanglabs.app.tests.CheckoutWorkflow@5ffead27]" started-at="2025-11-17T23:00:52 EET" name="checkoutSuccess" finished-at="2025-11-17T23:01:01 EET" duration-ms="9176" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testLogOut -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.swanglabs.app.tests.LoginTest@16293aa2]" started-at="2025-11-17T18:31:46 EET" name="setUp" finished-at="2025-11-17T18:31:46 EET" duration-ms="18" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="lockedOutUserShowsError()[pri:6, instance:com.swanglabs.app.tests.LoginTest@16293aa2]" started-at="2025-11-17T18:31:46 EET" name="lockedOutUserShowsError" finished-at="2025-11-17T18:31:52 EET" duration-ms="5825" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- lockedOutUserShowsError -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.swanglabs.app.tests.LoginTest@16293aa2]" started-at="2025-11-17T18:31:52 EET" name="setUp" finished-at="2025-11-17T18:31:52 EET" duration-ms="9" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="problemUserTest()[pri:7, instance:com.swanglabs.app.tests.LoginTest@16293aa2]" started-at="2025-11-17T18:31:52 EET" name="problemUserTest" finished-at="2025-11-17T18:32:08 EET" duration-ms="16242" status="FAIL">
-          <exception class="java.lang.AssertionError">
+        </test-method> <!-- checkoutSuccess -->
+        <test-method signature="getOrder()[pri:10, instance:com.swanglabs.app.tests.CheckoutWorkflow@5ffead27]" started-at="2025-11-17T23:01:01 EET" name="getOrder" finished-at="2025-11-17T23:01:14 EET" duration-ms="12744" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
             <message>
-              <![CDATA[Expected exact text 'Sauce Labs Backpack' but was 'Sauce Labs Bike Light' expected [Sauce Labs Bike Light] but found [Sauce Labs Backpack]]]>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: (//android.widget.TextView[contains(@text,'$')])[4] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '26.1', java.version: '17.0.16'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appium:appActivity: com.swaglabsmobileapp.MainA..., appium:appPackage: com.swaglabsmobileapp, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.swaglabsmobileapp.MainA..., appPackage: com.swaglabsmobileapp, automationName: UiAutomator2, deviceName: emulator-5554, noReset: false, platformName: ANDROID}, appium:deviceApiLevel: 34, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_arm64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2220, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:noReset: false, appium:pixelRatio: 2.75, appium:platformVersion: 14, appium:statBarHeight: 66, appium:takesScreenshot: true, appium:viewportRect: {height: 2154, left: 0, top: 66, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: af88d209-7f97-4467-a614-ace57e5eb9ba]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Expected exact text 'Sauce Labs Backpack' but was 'Sauce Labs Bike Light' expected [Sauce Labs Bike Light] but found [Sauce Labs Backpack]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1590)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:656)
-at com.swanglabs.app.tests.LoginTest.problemUserTest(LoginTest.java:199)
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: (//android.widget.TextView[contains(@text,'$')])[4] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: '4.25.0', revision: '8a8aea2337'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '26.1', java.version: '17.0.16'
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appium:appActivity: com.swaglabsmobileapp.MainA..., appium:appPackage: com.swaglabsmobileapp, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.swaglabsmobileapp.MainA..., appPackage: com.swaglabsmobileapp, automationName: UiAutomator2, deviceName: emulator-5554, noReset: false, platformName: ANDROID}, appium:deviceApiLevel: 34, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_arm64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2220, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:noReset: false, appium:pixelRatio: 2.75, appium:platformVersion: 14, appium:statBarHeight: 66, appium:takesScreenshot: true, appium:viewportRect: {height: 2154, left: 0, top: 66, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: af88d209-7f97-4467-a614-ace57e5eb9ba
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at com.swanglabs.app.pages.Overviewpage.Overview(Overviewpage.java:41)
+at com.swanglabs.app.tests.CheckoutWorkflow.getOrder(CheckoutWorkflow.java:135)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -102,15 +98,23 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- problemUserTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.swanglabs.app.tests.LoginTest@16293aa2]" started-at="2025-11-17T18:32:08 EET" name="tearDown" finished-at="2025-11-17T18:32:09 EET" duration-ms="902" status="PASS">
+        </test-method> <!-- getOrder -->
+        <test-method signature="finishOrder()[pri:11, instance:com.swanglabs.app.tests.CheckoutWorkflow@5ffead27]" started-at="2025-11-17T23:01:14 EET" name="finishOrder" finished-at="2025-11-17T23:01:16 EET" duration-ms="1885" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- finishOrder -->
+        <test-method signature="checkoutComplete()[pri:12, instance:com.swanglabs.app.tests.CheckoutWorkflow@5ffead27]" started-at="2025-11-17T23:01:16 EET" name="checkoutComplete" finished-at="2025-11-17T23:01:17 EET" duration-ms="1022" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkoutComplete -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.swanglabs.app.tests.CheckoutWorkflow@5ffead27]" started-at="2025-11-17T23:01:17 EET" name="tearDown" finished-at="2025-11-17T23:01:17 EET" duration-ms="708" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.swanglabs.app.tests.LoginTest -->
+      </class> <!-- com.swanglabs.app.tests.CheckoutWorkflow -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

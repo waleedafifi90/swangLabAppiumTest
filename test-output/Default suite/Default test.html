@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>6/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>11/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Nov 17 18:30:33 EET 2025</td>
+<td>Started on:</td><td>Mon Nov 17 22:59:54 EET 2025</td>
 </tr>
-<tr><td>Total time:</td><td>96 seconds (96191 ms)</td>
+<tr><td>Total time:</td><td>82 seconds (82938 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,14 +76,17 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.swanglabs.app.tests.LoginTest.problemUserTest()'><b>problemUserTest</b><br>Test class: com.swanglabs.app.tests.LoginTest</td>
-<td><div><pre>java.lang.AssertionError: Expected exact text &apos;Sauce Labs Backpack&apos; but was &apos;Sauce Labs Bike Light&apos; expected [Sauce Labs Bike Light] but found [Sauce Labs Backpack]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1590)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-	at org.testng.Assert.assertEquals(Assert.java:132)
-	at org.testng.Assert.assertEquals(Assert.java:656)
-	at com.swanglabs.app.tests.LoginTest.problemUserTest(LoginTest.java:199)
+<td title='com.swanglabs.app.tests.CheckoutWorkflow.getOrder()'><b>getOrder</b><br>Test class: com.swanglabs.app.tests.CheckoutWorkflow</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: (//android.widget.TextView[contains(@text,&apos;$&apos;)])[4] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;26.1&apos;, java.version: &apos;17.0.16&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appium:appActivity: com.swaglabsmobileapp.MainA..., appium:appPackage: com.swaglabsmobileapp, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.swaglabsmobileapp.MainA..., appPackage: com.swaglabsmobileapp, automationName: UiAutomator2, deviceName: emulator-5554, noReset: false, platformName: ANDROID}, appium:deviceApiLevel: 34, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_arm64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2220, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:noReset: false, appium:pixelRatio: 2.75, appium:platformVersion: 14, appium:statBarHeight: 66, appium:takesScreenshot: true, appium:viewportRect: {height: 2154, left: 0, top: 66, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: af88d209-7f97-4467-a614-ace57e5eb9ba
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.swanglabs.app.pages.Overviewpage.Overview(Overviewpage.java:41)
+	at com.swanglabs.app.tests.CheckoutWorkflow.getOrder(CheckoutWorkflow.java:135)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -112,14 +115,17 @@ function toggleAllBoxes() {
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1031968647", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1031968647'><pre>java.lang.AssertionError: Expected exact text &apos;Sauce Labs Backpack&apos; but was &apos;Sauce Labs Bike Light&apos; expected [Sauce Labs Bike Light] but found [Sauce Labs Backpack]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1590)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-	at org.testng.Assert.assertEquals(Assert.java:132)
-	at org.testng.Assert.assertEquals(Assert.java:656)
-	at com.swanglabs.app.tests.LoginTest.problemUserTest(LoginTest.java:199)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1746117425", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1746117425'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: (//android.widget.TextView[contains(@text,&apos;$&apos;)])[4] (tried for 10 second(s) with 500 milliseconds interval)
+Build info: version: &apos;4.25.0&apos;, revision: &apos;8a8aea2337&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;26.1&apos;, java.version: &apos;17.0.16&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Capabilities {appium:appActivity: com.swaglabsmobileapp.MainA..., appium:appPackage: com.swaglabsmobileapp, appium:automationName: UiAutomator2, appium:databaseEnabled: false, appium:desired: {appActivity: com.swaglabsmobileapp.MainA..., appPackage: com.swaglabsmobileapp, automationName: UiAutomator2, deviceName: emulator-5554, noReset: false, platformName: ANDROID}, appium:deviceApiLevel: 34, appium:deviceManufacturer: Google, appium:deviceModel: sdk_gphone64_arm64, appium:deviceName: emulator-5554, appium:deviceScreenDensity: 440, appium:deviceScreenSize: 1080x2220, appium:deviceUDID: emulator-5554, appium:javascriptEnabled: true, appium:locationContextEnabled: false, appium:networkConnectionEnabled: true, appium:noReset: false, appium:pixelRatio: 2.75, appium:platformVersion: 14, appium:statBarHeight: 66, appium:takesScreenshot: true, appium:viewportRect: {height: 2154, left: 0, top: 66, width: 1080}, appium:warnings: {}, appium:webStorageEnabled: false, platformName: ANDROID}
+Session ID: af88d209-7f97-4467-a614-ace57e5eb9ba
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.swanglabs.app.pages.Overviewpage.Overview(Overviewpage.java:41)
+	at com.swanglabs.app.tests.CheckoutWorkflow.getOrder(CheckoutWorkflow.java:135)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -149,8 +155,8 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
-<td>16</td>
-<td>com.swanglabs.app.tests.LoginTest@16293aa2</td></tr>
+<td>12</td>
+<td>com.swanglabs.app.tests.CheckoutWorkflow@5ffead27</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -161,35 +167,60 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.swanglabs.app.tests.LoginTest.validLoginWorks()'><b>validLoginWorks</b><br>Test class: com.swanglabs.app.tests.LoginTest</td>
+<td title='com.swanglabs.app.tests.CheckoutWorkflow.removeItemFromCart()'><b>removeItemFromCart</b><br>Test class: com.swanglabs.app.tests.CheckoutWorkflow</td>
+<td></td>
+<td>2</td>
+<td>com.swanglabs.app.tests.CheckoutWorkflow@5ffead27</td></tr>
+<tr>
+<td title='com.swanglabs.app.tests.CheckoutWorkflow.checkoutMissZipcode()'><b>checkoutMissZipcode</b><br>Test class: com.swanglabs.app.tests.CheckoutWorkflow</td>
 <td></td>
 <td>9</td>
-<td>com.swanglabs.app.tests.LoginTest@16293aa2</td></tr>
+<td>com.swanglabs.app.tests.CheckoutWorkflow@5ffead27</td></tr>
 <tr>
-<td title='com.swanglabs.app.tests.LoginTest.testLogOut()'><b>testLogOut</b><br>Test class: com.swanglabs.app.tests.LoginTest</td>
+<td title='com.swanglabs.app.tests.CheckoutWorkflow.finishOrder()'><b>finishOrder</b><br>Test class: com.swanglabs.app.tests.CheckoutWorkflow</td>
 <td></td>
-<td>3</td>
-<td>com.swanglabs.app.tests.LoginTest@16293aa2</td></tr>
+<td>1</td>
+<td>com.swanglabs.app.tests.CheckoutWorkflow@5ffead27</td></tr>
 <tr>
-<td title='com.swanglabs.app.tests.LoginTest.lockedOutUserShowsError()'><b>lockedOutUserShowsError</b><br>Test class: com.swanglabs.app.tests.LoginTest</td>
+<td title='com.swanglabs.app.tests.CheckoutWorkflow.testInvalidLogin()'><b>testInvalidLogin</b><br>Test class: com.swanglabs.app.tests.CheckoutWorkflow</td>
 <td></td>
-<td>5</td>
-<td>com.swanglabs.app.tests.LoginTest@16293aa2</td></tr>
+<td>7</td>
+<td>com.swanglabs.app.tests.CheckoutWorkflow@5ffead27</td></tr>
 <tr>
-<td title='com.swanglabs.app.tests.LoginTest.drawerOpensAndHasExpectedItems()'><b>drawerOpensAndHasExpectedItems</b><br>Test class: com.swanglabs.app.tests.LoginTest</td>
+<td title='com.swanglabs.app.tests.CheckoutWorkflow.testValidLogin()'><b>testValidLogin</b><br>Test class: com.swanglabs.app.tests.CheckoutWorkflow</td>
 <td></td>
-<td>22</td>
-<td>com.swanglabs.app.tests.LoginTest@16293aa2</td></tr>
+<td>6</td>
+<td>com.swanglabs.app.tests.CheckoutWorkflow@5ffead27</td></tr>
 <tr>
-<td title='com.swanglabs.app.tests.LoginTest.product_title_and_price_match_between_list_and_details()'><b>product_title_and_price_match_between_list_and_details</b><br>Test class: com.swanglabs.app.tests.LoginTest</td>
+<td title='com.swanglabs.app.tests.CheckoutWorkflow.addMultipleItemsToCart()'><b>addMultipleItemsToCart</b><br>Test class: com.swanglabs.app.tests.CheckoutWorkflow</td>
 <td></td>
-<td>8</td>
-<td>com.swanglabs.app.tests.LoginTest@16293aa2</td></tr>
+<td>4</td>
+<td>com.swanglabs.app.tests.CheckoutWorkflow@5ffead27</td></tr>
 <tr>
-<td title='com.swanglabs.app.tests.LoginTest.drawer_close_button_closes_drawer()'><b>drawer_close_button_closes_drawer</b><br>Test class: com.swanglabs.app.tests.LoginTest</td>
+<td title='com.swanglabs.app.tests.CheckoutWorkflow.checkoutInfoEmpty()'><b>checkoutInfoEmpty</b><br>Test class: com.swanglabs.app.tests.CheckoutWorkflow</td>
 <td></td>
-<td>22</td>
-<td>com.swanglabs.app.tests.LoginTest@16293aa2</td></tr>
+<td>2</td>
+<td>com.swanglabs.app.tests.CheckoutWorkflow@5ffead27</td></tr>
+<tr>
+<td title='com.swanglabs.app.tests.CheckoutWorkflow.checkoutComplete()'><b>checkoutComplete</b><br>Test class: com.swanglabs.app.tests.CheckoutWorkflow</td>
+<td></td>
+<td>1</td>
+<td>com.swanglabs.app.tests.CheckoutWorkflow@5ffead27</td></tr>
+<tr>
+<td title='com.swanglabs.app.tests.CheckoutWorkflow.testAddOneItemToCart()'><b>testAddOneItemToCart</b><br>Test class: com.swanglabs.app.tests.CheckoutWorkflow</td>
+<td></td>
+<td>4</td>
+<td>com.swanglabs.app.tests.CheckoutWorkflow@5ffead27</td></tr>
+<tr>
+<td title='com.swanglabs.app.tests.CheckoutWorkflow.checkoutMissLastname()'><b>checkoutMissLastname</b><br>Test class: com.swanglabs.app.tests.CheckoutWorkflow</td>
+<td></td>
+<td>9</td>
+<td>com.swanglabs.app.tests.CheckoutWorkflow@5ffead27</td></tr>
+<tr>
+<td title='com.swanglabs.app.tests.CheckoutWorkflow.checkoutSuccess()'><b>checkoutSuccess</b><br>Test class: com.swanglabs.app.tests.CheckoutWorkflow</td>
+<td></td>
+<td>9</td>
+<td>com.swanglabs.app.tests.CheckoutWorkflow@5ffead27</td></tr>
 </table><p>
 </body>
 </html>

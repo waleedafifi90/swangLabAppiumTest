@@ -3,12 +3,23 @@
 <suite name="Failed suite [MobileSuite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Appium Android Tests(failed)">
     <classes>
+      <class name="com.swanglabs.app.tests.Sorting">
+        <methods>
+          <include name="tearDown"/>
+          <include name="testProductSortingAndDetails"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.swanglabs.app.tests.Sorting -->
       <class name="com.swanglabs.app.tests.LoginTest">
         <methods>
           <include name="problemUserTest"/>
           <include name="lockedOutUserShowsError"/>
-          <include name="tearDown"/>
+          <include name="drawerOpensAndHasExpectedItems"/>
           <include name="validLoginWorks"/>
+          <include name="tearDown"/>
+          <include name="drawer_close_button_closes_drawer"/>
+          <include name="testLogOut"/>
+          <include name="product_title_and_price_match_between_list_and_details"/>
           <include name="setUp"/>
         </methods>
       </class> <!-- com.swanglabs.app.tests.LoginTest -->
